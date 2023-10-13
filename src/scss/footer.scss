@@ -1,0 +1,108 @@
+.footer {
+  border-radius: 64px 64px 0px 0px;
+  border-top: 4px solid var(--bg);
+  border-right: 4px solid var(--bg);
+  border-left: 4px solid var(--bg);
+  background: var(--bg-f);
+  z-index: 10;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 40px 20px 24px;
+
+    @media (max-width: 1040px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @media (max-width: 1040px) {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+      }
+    }
+
+    &-item {
+      & a {
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--bg);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    & span {
+      display: block;
+      text-align: end;
+      margin-bottom: 14px;
+
+      @media (max-width: 1040px) {
+        text-align: start;
+        margin-bottom: 8px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      z-index: 100;
+
+      @media (max-width: 1040px) {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+      }
+
+      &:hover .main-stop {
+        stop-color: #478bf9;
+      }
+      &:hover .alt-stop {
+        stop-color: #9dadf2;
+      }
+
+      & svg {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: var(--bg);
+
+        @media (max-width: 1040px) {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
+
+.main-stop,
+.alt-stop {
+  transition: 0.3s ease;
+  stop-color: var(--bg);
+}

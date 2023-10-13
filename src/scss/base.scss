@@ -8,10 +8,12 @@
 }
 
 :root {
-  --text: #FFFFFF;
-  --bg: #478BF9;
-  --dark: #110A1D;
-  --light: #9DADF2;
+  --text: #ffffff;
+  --bg: #478bf9;
+  --dark: #110a1d;
+  --light: #9dadf2;
+  --sub-title: #ffffff99;
+  --bg-f: #1e1231;
 }
 
 html,
@@ -21,7 +23,7 @@ body {
 }
 
 body {
-  font-family: 'Lexend', sans-serif;
+  font-family: "Lexend", sans-serif;
   font-weight: 300;
   color: var(--text);
   background-color: var(--dark);
@@ -63,4 +65,21 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+}
+
+.btn {
+  padding: 20px 72px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+  border-radius: 48px;
+  background-color: var(--bg);
+
+  @media (max-width: 580px) {
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+  }
 }
