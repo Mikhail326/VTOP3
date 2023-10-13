@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #FFFFFF;
+  --bg: #478BF9;
+  --dark: #110A1D;
+  --light: #9DADF2;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  color: var(--text);
+  background-color: var(--dark);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1640px;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
+}
+
+select {
+  width: 75px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
