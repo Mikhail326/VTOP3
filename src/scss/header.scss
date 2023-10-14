@@ -1,8 +1,8 @@
 .header {
-  margin: 16px auto 0 auto;
+  padding-top: 16px;
 
   @media (max-width: 1040px) {
-    margin: 10px auto 0 auto;
+    padding-top: 10px;
   }
 
   &__wrapper {
@@ -35,12 +35,12 @@
   &__menu {
     @media (max-width: 1040px) {
       display: flex;
-      height: calc(100vh - 70px);
+      height: calc(100vh - 71px);
       justify-content: center;
       align-items: flex-start;
       background-color: var(--dark);
       position: absolute;
-      top: 74px;
+      top: 71px;
       left: 0;
       width: 100%;
       z-index: 999;
@@ -162,7 +162,7 @@
         background-image: url("../img/header-icon-lang.svg");
         width: 15px;
         height: 15px;
-        z-index: -1;
+        z-index: 1;
       }
     }
 
@@ -173,7 +173,7 @@
       align-items: center;
       cursor: pointer;
       position: relative;
-      
+
       &::before,
       &::after {
         content: "";
