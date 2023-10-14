@@ -4,6 +4,7 @@
   border-right: 4px solid var(--bg);
   border-left: 4px solid var(--bg);
   background: var(--bg-f);
+  position: relative;
 
   &__wrapper {
     display: flex;
