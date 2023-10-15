@@ -149,6 +149,11 @@
       &::-webkit-scrollbar-track {
         border-radius: 100px;
         background: #ffffff1f;
+        margin-block: 80px;
+
+        @media (max-width: 580px) {
+          margin-block: 35px;
+        }
       }
 
       &::-webkit-scrollbar-thumb {
@@ -163,6 +168,11 @@
       border-radius: 196px;
       background-color: var(--dark);
       margin-bottom: 16px;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: var(--bg);
+      }
 
       @media (max-width: 580px) {
         padding: 15px 35px;
